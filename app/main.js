@@ -10,7 +10,7 @@ require.config({
 require(['aura/aura'], function (Aura) {
   'use strict';
 
-  var app = new Aura();
+  var app = new Aura( { debug: {enable: true }});
 
   /*
   Add your extensions here.
