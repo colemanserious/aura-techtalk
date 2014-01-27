@@ -11,6 +11,8 @@ require(['aura/aura'], function (Aura) {
   'use strict';
 
   var app = new Aura( { debug: {enable: true }});
+  app.components.addSource('todo', 'http://localhost:9080/todomvc/app/aura_components'); // URL of components themselves - outcome: missing renderTemplate (provided by Aura)
+  //app.components.addSource('todo', 'http://localhost:9080/todomvc');  // base URL - outcome: requireJS script error
 
   /*
   Add your extensions here.
