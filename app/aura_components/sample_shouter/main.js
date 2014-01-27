@@ -19,6 +19,7 @@ define(['underscore'], function (_) {
       element.fadeOut(200, function () {
         element.fadeIn(200);
       });
+      this.sandbox.emit('shouted', 'Humpty Dumpty!');
     }
   };
 
