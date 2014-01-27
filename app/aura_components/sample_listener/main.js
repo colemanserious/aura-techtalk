@@ -11,7 +11,9 @@ define(['underscore'], function (_) {
       this.$el.on('click', _.bind(this.someCoolFeature, this));
       this.render();
 
+      this.sandbox.logger.log("Foo: " + this.options.foo);
       this.sandbox.on( 'shouted', this.shouterHandler, this); 
+      this.sandbox.isLoggedIn();
     },
 
     render: function () {

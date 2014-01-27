@@ -16,6 +16,8 @@ require(['aura/aura'], function (Aura) {
   Add your extensions here.
   app.use('extensions/sample');
   */
+  app.use( 'extensions/ssohandler');
+
   app.start({ components: 'body' }).then(function () {
     console.log('Aura started...');
   });

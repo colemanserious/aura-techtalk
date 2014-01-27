@@ -11,6 +11,7 @@ define(['underscore'], function (_) {
     render: function () {
       //Place render logic here
       this.$el.html('Click me: ' + this.$el.html());
+      this.sandbox.missingExtensionMethod();
     },
 
     someCoolFeature: function () {
